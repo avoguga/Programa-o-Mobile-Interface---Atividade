@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import FirstSection from './src/FirstSection';
+import SecondSection from './src/SecondSection';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start aaaworking on your app!</Text>
-      <StatusBar style="auto" />
+      <FirstSection></FirstSection>
+      <SecondSection></SecondSection>
+      <View style={styles.buttonList}>
+
+      </View>
     </View>
   );
 }
@@ -13,8 +18,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#F7EBE8"
   },
+  buttonList: {
+    flexDirection: 'row',
+  }
 });
