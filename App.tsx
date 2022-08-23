@@ -6,11 +6,8 @@ import SecondSection from './src/SecondSection';
 export default function App() {
   return (
     <View style={styles.container}>
-      <FirstSection></FirstSection>
-      <SecondSection></SecondSection>
-      <View style={styles.buttonList}>
-
-      </View>
+      <FirstSection/>
+      <SecondSection/>
     </View>
   );
 }
@@ -20,7 +17,4 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F7EBE8"
   },
-  buttonList: {
-    flexDirection: 'row',
-  }
 });
